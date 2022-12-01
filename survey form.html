@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="outside">
+    <form id="booking-form">
+      <h1 id="title">Booking Confirmation Form</h1>
+      <p id="description"><b>Note:</b>Enter correct and relevant details for booking confirmation</p>
+      <!---personal details--->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" required id="name" name="username" placeholder="Enter name here">
+        </div>
+        <div>
+          <label for="address-label">Address:</label>
+          <input type="Address" id="address" name="Address" placeholder="Enter address here">
+        </div>
+        <div>
+        <label id="email-label" for="Email">Email:</label>
+        <input type="email" required id="email" name="useremail" placeholder="Enter email here">
+        </div>
+        <div>
+          <label id="number-label" for="phone">Phone Number:</label>
+          <input type="number" id="number" name="username" placeholder="Enter number here">
+          </div>
+          <div>
+            <label id="age-label" for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter age here">
+          </div>
+          <div>
+            <label for="Gender">Gender</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked>Male<br>
+              <input type="radio" name="gender" value="female">Female<br>
+              <input type="radio" name="gender" value="other">Other<br>
+            </p>
+          </div>
+          <label for="date-label">Date of Arrival:</label>
+          <input type="date" name="arrival">
+          <label for="date-label">Date of Departure:</label>
+          <input type="date" name="departure">
+      </fieldset>
+      <fieldset>
+        <legend>Check The Applicable Conditions</legend>
+        <p>
+         <input type="checkbox" name="health" value="health">I am suffering from serious health issues<br>
+         <input type="checkbox" name="elders" value="elders">I have elders staying with me<br>
+         <input type="checkbox" name="drink" value="drink">I drink or smoke<br>
+         <input type="checkbox" name="privacy" value="privacy">I need privacy during my stay<br>
+         <input type="checkbox" name="care" value="care">I need special care during my stay<br>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Place Of Stay</legend>
+        <div>
+        <label for="City">Select City:</label>
+        <select id="dropdown">
+          <option value="chennai">Chennai</option>
+          <option value="bangalore">Bangalore</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="delhi">Delhi</option>
+          <option value="hyderabad">Hyderabad</option>
+        </select><br><br>
+        <label for="room">Room Type:</label>
+        <select id="dropdown">
+          <option value="single">Single Room</option>
+          <option value="twin">Twin Room</option>
+          <option value="studio">Studio Room</option>
+          <option value="suite">Suite</option>
+          <option value="presidential">Presidential Suite</option>
+        </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Requirements</legend>
+        <div>
+          <label for="message"></label>
+        <p>Please enter the reason of your stay and mention if you have any requirements</p>
+        <textarea id="message" name="usermessage" rows="3" cols="50" placeholder="Enter text here..."></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <div>
+          <label for="payment">Select Mode of Payment</label><br>
+          <input type="radio" name="credit" value="credit" checked>Credit Card<br>
+          <input type="radio" name="debit" value="debit">Debit Card<br>
+          <input type="radio" name="cheque" value="cheque">Cheque<br>
+          <input type="radio" name="cash" value="cash">Cash<br>
+        </div>
+        <p>Attach your proofs here
+        <button>Attach Proof</button></p>
+      </fieldset>
+      <div id="submitbutton">
+        <button type="submit" id="submit">Confirm Your Booking</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
